@@ -1,9 +1,10 @@
-let D = +prompt("Kun:");
-let M = +prompt("Oy:");
+
+let d = +prompt("kun:");
+let m = +prompt("oy:");
 
 let kunlar;
 
-switch (M) {
+switch (m) {
     case 1:
     case 3:
     case 5:
@@ -26,15 +27,15 @@ switch (M) {
         break;
 }
 
-D++;
+d++;
 
-if (D > kunlar) {
-    D = 1;
-    M++;
+if (d > kunlar) {
+    d = 1;
+    m++;
 
-    if (M > 12) {
-        M = 1;
+    if (m > 12) {
+        m = 1;
     }
 }
 
-console.log(D, M);
+console.log(d, m);
